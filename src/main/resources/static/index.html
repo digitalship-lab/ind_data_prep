@@ -1,0 +1,65 @@
+<!doctype html>
+
+<!--
+  ~ ============================================================================
+  ~
+  ~  Copyright (C) 2006-2016 Talend Inc. - www.talend.com
+  ~
+  ~  This source code is available under agreement available at
+  ~  https://github.com/Talend/data-prep/blob/master/LICENSE
+  ~
+  ~  You should have received a copy of the agreement
+  ~  along with this program; if not, write to Talend SA
+  ~  9 rue Pages 92150 Suresnes, France
+  ~
+  ~ ============================================================================
+  -->
+
+<html ng-strict-di>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>D.prep | (주)디지탈쉽</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" type="image/png" href="/assets/images/digitalship-favicon.png">
+        <script src="http://localhost:8290/divolte.js" defer async></script>        
+        <link href="styles/jquery-ui.css" rel="stylesheet">
+        <link href="styles/vendor-519518f23372734d8401.css" rel="stylesheet">
+        <link href="styles/style-519518f23372734d8401.css" rel="stylesheet">
+        <link href="styles/app-519518f23372734d8401.css" rel="stylesheet">
+        <script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1.min.js"></script>
+        <script type="text/javascript" src="etcCustomEvent.js"></script>        
+        <script type="text/javascript" src="vendor-519518f23372734d8401.js"></script>
+        <script type="text/javascript" src="style-519518f23372734d8401.js"></script>
+        <script type="text/javascript" src="app-519518f23372734d8401.js"></script>            
+        <style>    
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            * {
+                font-family: Poppins, sans-serif, FontAwesome !important
+            }
+        
+            div.navbar-left button { background-color: #007bff !important; color: white }
+            div.navbar-left button:hover { background-color: #0069d9 !important; color: white }
+            tr.list-item-preparation div.cell button.btn.btn-link, div.card-content.table-responsive>table>tbody svg.tc-svg-icon.tc-list-icon + button {
+			    /*width: 364px;*/
+			    text-align: left;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    overflow: hidden;
+			    display: inline-block;	    
+            }             
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <dataprep-app></dataprep-app>
+
+        <script type="text/javascript">
+            fetchConfiguration().then(bootstrapDataPrepApplication.bind(null, ['data-prep']));
+        </script>
+    </body>
+</html>
